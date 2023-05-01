@@ -42,7 +42,7 @@ class URLShortener(Resource):
         return {'original_url': original_url, 'short_url': short_url}, 201
 
 
-api.add_resource(URLShortener, '/<string:short_url>', '/', '/shorten_url')
+api.add_resource(URLShortener, '/<string:short_url>', '/')
 
 if __name__ == '__main__':
     app.run(debug=True)
